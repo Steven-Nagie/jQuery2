@@ -15,6 +15,7 @@
 			<div class="logo-container">
 				<img class="logo" src="./img/icons/check-box.png" alt="Check box image">
 			</div>
+			<button id="saveStatus">Save List</button>
 			<div class="time-container">
 				<img class="time" src="./img/time.png" alt="countdown">
 			</div>
@@ -23,6 +24,13 @@
 
 	<!-- to-do main container -->
 	<section class="todo-main-container">
+		<div class="progress-box">
+			<h3>In Progress</h3>
+			<ul class="list-group" id="currentList"></ul>
+		</div>
+		<div>
+		</div>
+
 		<div
 		class="progress-box"
 		id="newList">
@@ -49,9 +57,9 @@
 
 
 	<!--jQuery-->
-	<script src="app/scripts/scripts.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<!--INclude your script file here -->
+	<!--Include your script file here. Have to make sure it comes after the jQuery source file so that jQuery loads before our jQuery code, which would prevent anything we did from working. -->
+	<script src="./app/scripts/scripts.js"></script>
 </main>
 </body>
 </html>
